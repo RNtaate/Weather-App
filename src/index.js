@@ -1,6 +1,7 @@
 import "regenerator-runtime/runtime.js";
-import {displayForm, displayWeatherDetails, displayNoInformation} from '/src/elements';
+import {displayForm, displayWeatherDetails, displayNoInformation, toggleDegrees} from '/src/elements';
 import {getMyWeatherInformation, weatherDetails, changeBackground} from '/src/fetch';
+import {celToFah, fahToCel} from '/src/tempConversion';
 
 let myWeatherObj = {};
 
@@ -28,6 +29,7 @@ myForm.addEventListener('submit', (e) => {
 
       detailsDiv.innerHTML = displayWeatherDetails(myWeatherObj);
       changeBackground(lowerSection, myWeatherObj.weather);
+      toggleDegrees();
     }
     else {
       detailsDiv.innerHTML = displayNoInformation('No information available!');
@@ -35,7 +37,7 @@ myForm.addEventListener('submit', (e) => {
     }
   })
   .catch((error) => {
-    detailsDiv.innerHTML = displayNoInformation('No information available!');
+    detailsDiv.innerHTML = displayNoInformation('Something went wrong, try again!!');
     changeBackground(lowerSection);
   })
 })
