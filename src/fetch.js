@@ -26,4 +26,32 @@ let weatherDetails = (response) => {
   return obj;
 }
 
-export {getMyWeatherInformation, weatherDetails};
+let changeBackground = (element, weather = '') => {
+  switch(weather.toLowerCase()) {
+    case 'clear': 
+      element.style.backgroundImage = 'url(../src/images/clear1.jpg)';
+      break;
+    case 'rain': 
+      element.style.backgroundImage = 'url(../src/images/rain1.jpeg)';
+      break;
+    case 'clouds': 
+      element.style.backgroundImage = 'url(../src/images/cloud.jpg)';
+      break;      
+    case 'snow': 
+      element.style.backgroundImage = 'url(../src/images/snow1.jpg)';
+      break;    
+    case 'thunderstorm': 
+      element.style.backgroundImage = 'url(../src/images/thunderstorm.jpg)';
+      break;  
+    case 'drizzle': 
+      element.style.backgroundImage = 'url(../src/images/drizzle.jpg)';
+      break;    
+    case 'mist': 
+      element.style.backgroundImage = 'url(../src/images/mist2.jpg)';
+      break;                   
+    default:
+      element.style.backgroundImage = 'url(../src/images/standard.jpg)';
+  }
+}
+
+export {getMyWeatherInformation, weatherDetails, changeBackground};
