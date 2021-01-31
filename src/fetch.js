@@ -1,11 +1,11 @@
 const WEATHER_KEY = 'a14892b2ac13cae97fcfdc26fcd3d2a6';
 
 let getMyWeatherInformation = async (city) => {
-  let request = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${WEATHER_KEY}`);
+  let request = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&APPID=${WEATHER_KEY}`);
 
   let response = await request.json();
 
-  return response;
+  return response
 }
 
 let retrieveFlag = (country) => {
@@ -17,7 +17,7 @@ let weatherDetails = (response) => {
     city: response.name,
     country: response.sys.country,
     weather: response.weather[0].main,
-    temp: response.main.temp.toFixed(1),
+    temp: response.main.temp,
     feels_like: response.main.feels_like,
     humidity: response.main.humidity,
     flag: retrieveFlag(response.sys.country)
