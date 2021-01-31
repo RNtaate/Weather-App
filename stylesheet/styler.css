@@ -13,6 +13,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: 'Roboto', sans-serif;
 }
 
 main {
@@ -21,12 +22,12 @@ main {
   height: 80%;
   display: flex;
   flex-direction: column;
-  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.4);
 }
 
 .upper-section {
   color: white;
-  background-color: #111;
+  background-color: #333;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -37,6 +38,7 @@ main {
 .app-heading {
   font-size: 70px;
   font-weight: 100;
+  font-family: 'Roboto', sans-serif;
 }
 
 input[type=text],
@@ -63,4 +65,52 @@ input[type=submit] {
   background-position: center;
   background-size: cover;
   flex: 4;
+  font-weight: 200;
+  color: white;
+}
+
+.details-div {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #000, transparent);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+.weather-details-div {
+  display: flex;
+  flex-direction: column;
+  transition: all 0.4s linear;
+}
+
+.country-name-div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.country-heading-h2 {
+  font-size: 50px;
+  margin-right: 20px;
+}
+
+.weather-info-left-div {
+  font-size: 100px;
+  margin-bottom: 30px;
+}
+
+.weather-info-right-div {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.weather-info-right-div > span {
+  margin-right: 30px;
+}
+
+.no-info-p {
+  font-weight: 200;
+  font-size: 40px;
 }
