@@ -10,6 +10,6 @@
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
-eval("console.log('I am going to have some fun with this.');\n\n//# sourceURL=webpack://weather-app/./src/index.js?");
+eval("console.log('This is going to be my weather app');\n\n//# sourceURL=webpack://weather-app/./src/index.js?");
 /******/ })()
 ;
