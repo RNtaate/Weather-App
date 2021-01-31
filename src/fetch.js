@@ -8,21 +8,22 @@ let getMyWeatherInformation = async (city) => {
   return response;
 }
 
+let retrieveFlag = (country) => {
+  return `https://www.countryflags.io/${country}/shiny/64.png`
+}
+
 let weatherDetails = (response) => {
   let obj = {
     city: response.name,
     country: response.sys.country,
     weather: response.weather[0].main,
-    temp: response.main.temp,
+    temp: response.main.temp.toFixed(1),
     feels_like: response.main.feels_like,
-    humidity: response.main.humidity
+    humidity: response.main.humidity,
+    flag: retrieveFlag(response.sys.country)
   }
 
   return obj;
 }
 
-let retrieveFlag = (country) => {
-  return `https://www.countryflags.io/${country}/shiny/64.png`
-}
-
-export {getMyWeatherInformation, weatherDetails, retrieveFlag};
+export {getMyWeatherInformation, weatherDetails};
