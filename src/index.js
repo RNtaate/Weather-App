@@ -5,11 +5,13 @@ import {getMyWeatherInformation, weatherDetails} from '/src/fetch';
 let myWeatherObj = {};
 
 let upperSection = document.querySelector('.upper-section');
+let detailsDiv = document.querySelector('.details-div');
 
 let formDiv = document.createElement('div');
 formDiv.innerHTML = displayForm();
 
 upperSection.appendChild(formDiv);
+detailsDiv.innerHTML = displayNoInformation('Welcome!!, Please enter a city');
 
 let myForm = document.querySelector('form');
 
@@ -23,13 +25,13 @@ myForm.addEventListener('submit', (e) => {
       console.log(response);
       myWeatherObj = weatherDetails(response);
 
-      document.querySelector('.details-div').innerHTML = displayWeatherDetails(myWeatherObj);
+      detailsDiv.innerHTML = displayWeatherDetails(myWeatherObj);
     }
     else {
-      document.querySelector('.details-div').innerHTML = displayNoInformation();
+      detailsDiv.innerHTML = displayNoInformation('No information available!');
     }
   })
   .catch((error) => {
-    document.querySelector('.details-div').innerHTML = displayNoInformation();
+    detailsDiv.innerHTML = displayNoInformation('No information available!');
   })
 })
