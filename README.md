@@ -24,7 +24,7 @@
 
 ## 🔴 Live Demo
 
-- coming soon!
+[Weather App](https://raw.githack.com/RNtaate/Weather-App/feature_weather/dist/index.html)
 
 ## Get started
 ### Prerequisites
