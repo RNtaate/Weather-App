@@ -5,7 +5,7 @@
 
 ## Project Description
 
-> This project is a weather forecast web application that uses the **WEATHER API** to retrieve weather data of a particular city and present it to the user in response to their entry.
+> This project is a weather forecast web application that uses the **WEATHER API** to retrieve weather data of most cities around the world and present it to the user in response to their specific entry.
 
 > It was built to demonstrate the use of **async/await** and **Promises** in javascript to write asynchronous code as well as use **fetch** to retrieve data from an API.
 
@@ -21,6 +21,7 @@
 - Javascript
 - Node Package Manager (npm)
 - Webpack
+- OpenWeatherMap API
 
 ## 🔴 Live Demo
 
