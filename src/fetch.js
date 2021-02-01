@@ -1,7 +1,7 @@
 const WEATHER_KEY = 'a14892b2ac13cae97fcfdc26fcd3d2a6';
 
 let getMyWeatherInformation = async (city) => {
-  let request = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&APPID=${WEATHER_KEY}`);
+  let request = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&APPID=${WEATHER_KEY}`, {mode: 'cors'});
 
   let response = await request.json();
 
@@ -47,6 +47,8 @@ let changeBackground = (element, weather = '') => {
       element.style.backgroundImage = 'url(../src/images/drizzle.jpg)';
       break;    
     case 'mist': 
+    case 'smoke':
+    case 'haze':
       element.style.backgroundImage = 'url(../src/images/mist2.jpg)';
       break;                   
     default:
