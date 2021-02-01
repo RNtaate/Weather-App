@@ -11,7 +11,7 @@
 
 ### Screenshots
 
-![](src/screenshots/weatherScreenshot.png)
+![](src/screenshots/weatherScreenshot2.png)
 
 ##  🔧 Built with
 
