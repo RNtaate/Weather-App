@@ -1,7 +1,7 @@
 const WEATHER_KEY = 'a14892b2ac13cae97fcfdc26fcd3d2a6';
 
 const getMyWeatherInformation = async (city) => {
-  const request = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&APPID=${WEATHER_KEY}`, { mode: 'cors' });
+  const request = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&APPID=${WEATHER_KEY}`, { mode: 'cors' });
 
   const response = await request.json();
 
