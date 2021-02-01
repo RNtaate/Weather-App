@@ -1,7 +1,7 @@
 import { celToFah, fahToCel } from './tempConversion';
 
 const displayForm = () => {
-  const newForm = '<form action="#" method="POST" class="weather-form"><input type="text" placeholder="Search city" required><input type="submit"></form>';
+  const newForm = '<form action="#" method="POST" class="weather-form"><input type="text" placeholder="Search city" required><input type="submit" value="Fetch"></form>';
 
   return newForm;
 };
