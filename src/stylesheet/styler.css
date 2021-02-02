@@ -61,7 +61,7 @@ input[type=submit] {
 }
 
 .lower-section {
-  background-image: url('../src/images/standard.jpg');
+  background-image: url('../images/standard.jpg');
   background-position: center;
   background-size: cover;
   flex: 4;
