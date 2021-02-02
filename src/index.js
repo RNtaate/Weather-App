@@ -1,3 +1,4 @@
+import './stylesheet/styler.css';
 import 'regenerator-runtime/runtime';
 import {
   displayForm, displayWeatherDetails, displayNoInformation, toggleDegrees,
