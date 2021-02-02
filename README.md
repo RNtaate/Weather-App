@@ -25,8 +25,8 @@
 
 ## 🔴 Live Demo
 
-[Weather App](https://raw.githack.com/RNtaate/Weather-App/feature_weather/dist/index.html)
-[Weather App - Netlify](https://jolly-montalcini-b4a1b8.netlify.app/)
+- [Weather App](https://raw.githack.com/RNtaate/Weather-App/feature_weather/dist/index.html)
+- [Weather App - Netlify](https://jolly-montalcini-b4a1b8.netlify.app/)
 
 ## Get started
 ### Prerequisites
