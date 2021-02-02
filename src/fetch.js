@@ -27,30 +27,30 @@ const weatherDetails = (response) => {
 const changeBackground = (element, weather = '') => {
   switch (weather.toLowerCase()) {
     case 'clear':
-      element.style.backgroundImage = 'url(../src/images/clear1.jpg)';
+      element.style.backgroundImage = 'url(./images/clear13bf802.jpg)';
       break;
     case 'rain':
-      element.style.backgroundImage = 'url(../src/images/rain1.jpeg)';
+      element.style.backgroundImage = 'url(./images/rain1fbf9e2.jpeg)';
       break;
     case 'clouds':
-      element.style.backgroundImage = 'url(../src/images/cloud.jpg)';
+      element.style.backgroundImage = 'url(./images/cloud0cf4b7.jpg)';
       break;
     case 'snow':
-      element.style.backgroundImage = 'url(../src/images/snow1.jpg)';
+      element.style.backgroundImage = 'url(./images/snow1c5e7fe.jpg)';
       break;
     case 'thunderstorm':
-      element.style.backgroundImage = 'url(../src/images/thunderstorm.jpg)';
+      element.style.backgroundImage = 'url(./images/thunderstorm8ea698.jpg)';
       break;
     case 'drizzle':
-      element.style.backgroundImage = 'url(../src/images/drizzle.jpg)';
+      element.style.backgroundImage = 'url(./images/drizzle67d970.jpg)';
       break;
     case 'mist':
     case 'smoke':
     case 'haze':
-      element.style.backgroundImage = 'url(../src/images/mist2.jpg)';
+      element.style.backgroundImage = 'url(./images/mist2d9c2a8.jpg)';
       break;
     default:
-      element.style.backgroundImage = 'url(../src/images/standard.jpg)';
+      element.style.backgroundImage = 'url(./images/standard1ae7b2.jpg)';
   }
 };
 
