@@ -19,6 +19,21 @@ module.exports = {
           },
         },
       },
+      {
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader'],
+      },
+      {
+        test: /\.(png|jpe?g|gif|svg)$/i,
+        loader: 'file-loader',
+        options: {
+          name: '[name][hash:6].[ext]',
+          outputPath: 'images',
+          publicPath: 'images',
+          esModule: false,
+          emitFile: true,
+        },
+      },
     ],
   },
 };
