@@ -14,6 +14,7 @@ body {
   justify-content: center;
   align-items: center;
   font-family: 'Roboto', sans-serif;
+  background-color: #122;
 }
 
 main {
@@ -140,8 +141,8 @@ input[type=submit]:hover,
 }
 
 .ball {
-  width: 26px;
-  height: 26px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   background-color: white;
   position: absolute;
