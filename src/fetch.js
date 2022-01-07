@@ -8,7 +8,7 @@ const getMyWeatherInformation = async (city) => {
   return response;
 };
 
-const retrieveFlag = (country) => `https://www.countryflags.io/${country}/shiny/64.png`;
+const retrieveFlag = (country) => `https://flagsapi.com/${country}/shiny/64.png`;
 
 const weatherDetails = (response) => {
   const obj = {
@@ -18,9 +18,10 @@ const weatherDetails = (response) => {
     temp: response.main.temp,
     feels_like: response.main.feels_like,
     humidity: response.main.humidity,
-    flag: retrieveFlag(response.sys.country),
+    flag: retrieveFlag(response.sys.country)
   };
 
+  console.log(response)
   return obj;
 };
 
